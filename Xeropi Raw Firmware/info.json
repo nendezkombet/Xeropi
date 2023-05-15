@@ -1,0 +1,64 @@
+{
+    "keyboard_name": "Xeropi",
+    "maintainer": "Sandipratama",
+    "manufacturer": "Synthvestigator",
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "direct": [
+            ["GP1", "GP2", "GP3", "NO_PIN" ],
+            ["GP4", "GP5", "GP6", "NO_PIN" ],
+            ["GP7", "GP22", "GP19", "NO_PIN" ],
+            ["GP18", "GP17", "GP16", "GP13" ]
+        ]
+    },
+    "debounce": 5,
+    "processor": "RP2040",
+    "usb": {
+        "vid": "0x458F",
+        "pid": "0x14E2",
+        "device_version": "1.0.0"
+    },
+        "encoder": {
+        "enabled": true,
+        "rotary": [
+            { "pin_a": "GP15", "pin_b": "GP14" }
+        ]
+    },
+        "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": true,
+        "rgb_matrix": true,
+        "encoder_map": true
+    },
+        "rgblight": {
+        "led_count": 12,
+        "pin": "GP0"
+    },
+        "rgb_matrix": {
+        "driver": "WS2812"
+    },
+    "layouts": {
+        "LAYOUT_ortho_4x4": {
+            "layout": [
+                {"x":0, "y":0},
+                {"x":1, "y":0},
+                {"x":2, "y":0},
+                {"x":0, "y":1},
+                {"x":1, "y":1},
+                {"x":2, "y":1},
+                {"x":0, "y":2},
+                {"x":1, "y":2},
+                {"x":2, "y":2},
+                {"x":0, "y":3},
+                {"x":1, "y":3},
+                {"x":2, "y":3},
+                {"x":3, "y":3}
+                
+            ]
+        }
+    }
+}
